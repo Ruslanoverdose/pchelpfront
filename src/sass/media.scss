@@ -1,0 +1,124 @@
+$black: rgba(0,0,0,.87);
+$blue: #3f51b5;
+$yellow: #ffc107;
+
+@media(min-width:320px){
+    .logo {
+        padding-top: 13px; 
+    }
+    .menu {
+        text-align: center;
+    }
+    #header {
+        padding: 100px 0;
+        h1 {
+            font-size: 2.4rem;
+        }
+        h4 {
+            font-size: 1.1rem;
+        }
+    }
+    .mobile-block {
+        left: -50%;
+        width: 50%;
+    }
+    .buttonIsOpen {
+        left: 51%;
+    }
+    .client-review {
+        height: 270px;
+        font-size: 12px;
+    }
+    .slider-review-mobile {
+        display: block;
+    }
+    .slider-review {
+        display: none;
+    }
+}
+@media(min-width:768px){
+    .mobile-block {
+        left: -30%;
+        width: 30%;
+    }
+    .buttonIsOpen {
+        left: 31%;
+    }
+}
+@media(min-width:576px) {
+    .mobile-block {
+        left: -35%;
+        width: 35%;
+    }
+    .buttonIsOpen {
+        left: 36%;
+    }
+    .client-review {
+        height: 220px;
+        font-size: 14px;
+    }
+    .detail-desc {
+        position: relative;
+        padding-right: 20px;
+        &:after
+        {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 20px;
+            background: #f3f3f3;
+            width: 1px;
+            height: 330px;
+        }
+            
+    }
+        
+}
+@media(max-width: 991px) {
+    #top-menu {
+        display: none;
+    }
+}
+@media(min-width:992px){
+    #mobile-menu, #mobilemenu {
+        display: none !important;
+    }
+    #mobilemenubutton {
+        display: none;
+    }
+    #top-menu {
+        display: block;
+    }
+        
+    .menu {
+        text-align: center;
+    }
+    .padding-none {
+        padding: 0 !important;
+    }
+    .logo {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #header {
+        padding: 180px 0;
+        h1 {
+            font-size: 3.2rem;
+        }
+        h4 {
+            font-size: 1.5rem;
+        }
+    }
+    .client-review {
+        height: 250px;
+        font-size: 14px;
+    }
+    .slider-review-mobile {
+        display: none;
+    }
+    .slider-review {
+        display: block;
+    }
+}
