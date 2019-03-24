@@ -23,6 +23,7 @@ const jsFiles = [
     "./src/js/jquery.min.js",
     "./src/js/bootstrap.min.js",
     "./src/js/main.js",
+    "./src/js/send.js",
     "./src/js/services.js",
     "./src/js/slick.min.js",
     "./src/js/slider.js"

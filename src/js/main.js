@@ -89,7 +89,7 @@ $(function($) {
         $("#mobilemenubutton").removeClass('buttonIsOpen')
     })
 
-    setTimeout(() => {$('#CallModalCenter').modal('show')}, 5000);
+    setTimeout(() => {$('#callblock').css({"transform": "translateY(0px)"})}, 5000);
     $('#CallModalCenter .closeblock button').click(function(event) {
         event.preventDefault()
         $('#CallModalCenter').modal('hide')
@@ -100,6 +100,8 @@ $(function($) {
         $('#modalFormService').modal('hide')
         
     })
+
+
 })
 
 

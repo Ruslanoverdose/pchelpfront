@@ -2,6 +2,7 @@ $(function() {
     let desc = ""  
     let img = ""
     let title = ""
+    let name =""
     $('input, textarea').change(function() {
         $(this).val() != "" ? $(this).addClass('active') : $(this).removeClass('active')
     })
@@ -12,15 +13,17 @@ $(function() {
         title = $(this).parents('.goods-block').find('.goods-title').text()
         $('.detail-block .detail-desc').append(desc)
         $('.detail-block .detail-title h3').text(title)
-        $('.detail-block .form-block input[name=ServiceTitle]').attr('value', title)
+        $('.detail-block .form-block input[name=selectedService]').attr('value', title)
     })
     $('#modalFormService').on('hidden.bs.modal', function () {
         desc = ""  
         img = ""
         title = ""
+        name = ""
         $('.detail-block .detail-desc').html(" ")
         $('.detail-block .detail-title h3').text(" ")
-        $('.detail-block .form-block input[name=ServiceTitle]').attr('value', " ")
+        $('input[name="selectedService"]').val(title)
+        $('.detail-block .form-block input[name=selectedService]').attr('value', " ")
         $('.detail-block .goods-pic img').attr('src', " ")
       })
 });

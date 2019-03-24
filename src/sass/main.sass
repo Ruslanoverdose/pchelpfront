@@ -19,7 +19,7 @@ html,body
 #wrapper 
   position: relative
 
-button,div, a, span, input
+button,div, a, span, input, input[type='submit'] 
   outline: none
   &:focus, &:active
     outline: none
@@ -128,7 +128,7 @@ section
     background: rgba(64, 81, 181, 0.5)
     border-radius: 100%
     animation: callButtonAnimate 1s infinite linear
-  button
+  button, input[type='submit'] 
     border: 0
     cursor: pointer
     color: #fff
@@ -362,7 +362,7 @@ section
         min-height: 100px
         height: 250px
         max-height: 500px
-      input[type='text'], textarea
+      input[type='text'], input[type='email'], input[type='tel'], textarea
         border: none
         background: transparent
         padding: 10px 0
@@ -383,14 +383,19 @@ section
         transform: scale(1, 1)
       textarea:focus ~ .bar
         transform: scale(1, 1)
-      button.btn-send
+      .btn-send 
         border: 0
         box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)
         border-radius: 100%
-        padding: 15px
+        padding: 16px 25px
         background: transparent
         cursor: pointer
         position: relative
+        background-image: url(../images/send.svg) !important
+        background-repeat: no-repeat
+        background-size: 58%
+        background-position: center
+        color: transparent
 
 #footer
   background: #212121
@@ -416,13 +421,16 @@ section
       width: 100%
       text-align: right
       transition: all .4s ease
-      button
+      button, input[type='submit'] 
         border: 0
         background: transparent
         cursor: pointer
         
+        
 .modal-custom 
-  max-width: 1000px
+  max-width: 1000px !important
+.modal-body
+  padding: 30px !important
 .modal-content
   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)
   border: 0
@@ -457,7 +465,7 @@ section
       width: 90%
   .call-mobile
     margin-bottom: 20px
-    button
+    button, input[type='submit'] 
       border: 0
       background: $blue
       color: #fff
@@ -501,7 +509,7 @@ section
   transition: 300ms all ease-in-out
   left: 1%
   top: 20px
-  button  
+  button, input[type='submit'] 
     border: 0
     cursor: pointer
     border-radius: 100%
@@ -520,11 +528,10 @@ section
 
 .closeblock
   text-align: right
-  position: absolute
   z-index: 99999
   top: 10px
   right: 10px
-  button 
+  button, input[type='submit'] 
     border: 0
     background: transparent
     cursor: pointer

@@ -393,7 +393,7 @@
                 </div>
                 <div class="section-content">
                     <div class="form-block">
-                        <form action="/">
+                        <form action="/" id="feedBackForm">
                             <div class="field">
                                 <input type="text" placeholder="">
                                 <label>
@@ -433,7 +433,7 @@
                             </div>
                             <div class="field">
                                 <div class="btn-sender">
-                                    <button class="btn-send"><img src="images/send.svg" alt=""></button>
+                                    <input type="submit" value="" class="btn-send">
                                 </div>
                             </div>
                         </form>
@@ -461,7 +461,7 @@
                     <br>
                 </div>
                 <div class="form-block">
-                        <form action="/">
+                        <form action="/" id="callForm">
                             <div class="field">
                                 <input type="text" placeholder="">
                                 <label>
@@ -485,7 +485,7 @@
                             </div>
                             <div class="field">
                                 <div class="btn-sender">
-                                    <button class="btn-send"><img src="images/send.svg" alt=""></button>
+                                    <input type="submit" value="" class="btn-send">
                                 </div>
                             </div>
                         </form>
@@ -516,13 +516,14 @@
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="form-block">
-                                            <form action="">
+                                            <form action="" id="serviceForm">
                                                 <div class="field">
                                                     <input type="text">
                                                     <label for="">Имя</label>
                                                     <span class="bar-default"></span>
                                                     <span class="bar"></span>
                                                 </div>
+                                                <input type="hidden" name="selectedService" value="Ничего не выбрано" class="wpcf7-form-control wpcf7-hidden selectedService">
                                                 <div class="field">
                                                     <input type="text">
                                                     <label for="">Email</label>
@@ -543,7 +544,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="field">
-                                                    <button class="btn btn-custom">Оставить заявку</button>
+                                                    <input type="submit" class="btn btn-custom" value="Оставить заявку">
                                                 </div>
                                             </form>
                                         </div>
@@ -594,62 +595,6 @@
           
             
         </section>
-        <div class="modal fade" id="CallModalCenter" tabindex="-1" role="dialog" aria-labelledby="CallModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-custom" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="container">
-                            <div class="closeblock">
-                                <button>
-                                    &#10006
-                                </button>
-                            </div>
-                            <div class="callblocktitle">
-                                <h1>
-                                    Для получения бесплатной консультации оставьте заявку на нашем сайте
-                                </h1>
-                                <br>
-                            </div>
-                            <div class="form-block">
-                                <form action="/ajax/callmodal" id="callFormModal">
-                                    <div class="field">
-                                        <input type="text" placeholder="" name="callNameModal">
-                                        <label>
-                                            Ваше имя
-                                        </label>
-                                        <span class="bar-default"></span>
-                                        <span class="bar"></span>
-                                    </div>
-                                    <div class="field">
-                                        <input type="text" placeholder="" name="callPhoneModal" id="callPhoneModal">
-                                        <label>
-                                            Ваш телефон
-                                        </label>
-                                        <span class="bar-default"></span>
-                                        <span class="bar"></span>
-                                    </div>
-                                    <div class="field">
-                                        <div class="checkbox-field">
-                                            <input type="checkbox"> Согласен на обработку
-                                        </div>
-                                    </div>
-                                    <div class="field">
-                                        <div class="message">
-    
-                                        </div>
-                                    </div>
-                                    <div class="field">
-                                        <div class="btn-sender">
-                                            <button class="btn-send"><img src="/images/send.svg" alt=""></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="callbuttonblock">
             <div class="blue-back">
                 <button class="">
